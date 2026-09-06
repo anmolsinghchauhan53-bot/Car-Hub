@@ -609,43 +609,161 @@ color: #64748b;
 }
 
 
-/* Small Mobile */
-@media (max-width: 400px) {
 
-    #navlink {
-        gap: 8px;
+ /* =========================
+   TABLET
+========================= */
+@media (max-width: 1000px) {
+
+    #herosec,
+    #aboutsec {
+        gap: 40px;
+        padding: 30px;
     }
 
-    .navlink {
-        font-size: 13px;
+    #herocontent,
+    #aboutcontent {
+        width: 45%;
     }
 
-    .logo {
-        font-size: 18px;
+    #heroimg,
+    #aboutimg {
+        width: 50%;
     }
 
-    .navbarbtn {
-        font-size: 10px;
-        padding: 6px;
+    .img {
+        width: 100%;
     }
 
     .head,
     .abouth {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .para,
     .aboutp {
-        font-size: 16px;
+        font-size: 20px;
     }
 
-    #servicehead h1 {
-        font-size: 28px;
+    #imgcards {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .navlink {
+        margin-left: 40px;
     }
 }
 
-    #footer {
-        padding-top: 40px;
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 700px) {
+
+    /* Navbar */
+    #nav,
+    #navb {
+        height: 70px;
+    }
+
+    .navlink {
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbarbtn {
+        padding: 7px;
+        font-size: 12px;
+    }
+
+    /* Hero */
+    #hero {
+        height: auto;
+    }
+
+    #herosec {
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+
+    #herocontent,
+    #heroimg {
+        width: 100%;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .head {
+        font-size: 35px;
+    }
+
+    .para {
+        font-size: 18px;
+    }
+
+    /* About */
+    #about {
+        height: auto;
+    }
+
+    #aboutsec {
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+
+    #aboutimg,
+    #aboutcontent {
+        width: 100%;
+    }
+
+    #aboutimg img {
+        width: 100%;
+    }
+
+    .abouth {
+        font-size: 35px;
+    }
+
+    .aboutp {
+        font-size: 18px;
+    }
+
+    /* Services */
+    #imgcards {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .carimg {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Contact */
+    #contactsec {
+        min-height: auto;
+        padding: 50px 20px;
+    }
+
+    #contactbox {
+        width: 100%;
+    }
+
+    /* Footer */
+    #footerbox {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
-
+ 
